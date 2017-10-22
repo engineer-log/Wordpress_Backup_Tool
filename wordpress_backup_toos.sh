@@ -1,19 +1,19 @@
 #!bin/sh
 
 #DBユーザー
-DB_USER="wordpress"
+DB_USER=$1
 #DBパスワード
-DB_PASSWORD="password"
+DB_PASSWORD=$2
 #DB名
-DB_NAME="wordpress"
+DB_NAME=$3
 #DBホスト
-DB_HOST="localhost"
+DB_HOST=$4
 #wordpressのファイルパス
-WORDPRESS_PATH="/var/www/wordpress/"
+WORDPRESS_PATH=$5
 #バックアップ先
 BACKUP_PATH="/Backup"
 #バックアップ世代数
-NUMBER_OF_GENERATIONS="15"
+NUMBER_OF_GENERATIONS="10"
 
 DATE=`date +%Y%m%d-%H%M%k`
 
