@@ -22,12 +22,12 @@ DATE=`date +%Y%m%d_%H-%M-%S`
 #フォルダ存分確認（ない場合は作成する）
 if [ ! -d $BACKUP_PATH/DB/"$ID" ]
 then
-    mkdir -m 777 $BACKUP_PATH/DB/"$ID"
+    mkdir -p -m 777 $BACKUP_PATH/DB/"$ID"
 fi
 
 if [ ! -d $BACKUP_PATH/FILE/"$ID" ]
 then
-    mkdir -m 777 $BACKUP_PATH/FILE/"$ID"
+    mkdir -p -m 777 $BACKUP_PATH/FILE/"$ID"
 fi
 
 
